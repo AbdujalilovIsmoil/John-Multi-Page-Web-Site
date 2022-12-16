@@ -1,0 +1,90 @@
+$text-color: #21243D;
+$link-color: #00A8CC;
+$section-bg-color: #EDF7FA;
+$box-bg-color: #FFFFFF;
+
+@mixin flexbox($flex, $jc, $ai, $gap, $fd) {
+  display: $flex;
+  justify-content: $jc;
+  align-items: $ai;
+  gap: $gap;
+  flex-direction: $fd;
+}
+
+.section {
+  &__post {
+    background-color: $section-bg-color;
+
+    margin: {
+      top: 70px;
+    }
+
+    padding: {
+      top: 10px;
+      bottom: 32px;
+    }
+
+    &_titles {
+      @include flexbox(flex, space-between, center, stretch, row);
+
+      &-text {
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 60px;
+        color: $text-color;
+      }
+
+      &-link {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: $link-color;
+      }
+    }
+
+    &_container {
+      @include flexbox(flex, space-between, flex-start, 20px, row);
+
+      &_box {
+        background-color: $box-bg-color;
+        box-shadow: 0px 4px 10px rgba(187, 225, 250, 0.25);
+        border-radius: 4px;
+        padding: 25px;
+        min-height: 295px;
+        width: 418px;
+        &-title {
+          font-weight: 700;
+          font-size: 26px;
+          line-height: 38px;
+          color: $text-color;
+          max-width: 374px;
+        }
+
+        &_dates {
+          margin: {
+            top: 17px;
+            bottom: 11px;
+          }
+
+          @include flexbox(flex, flex-start, flex-start, 25px, row);
+
+          &-text {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 26px;
+            color: $text-color;
+          }
+
+        }
+
+        &-description {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          color: $text-color;
+          max-width: 368px;
+        }
+      }
+    }
+  }
+}

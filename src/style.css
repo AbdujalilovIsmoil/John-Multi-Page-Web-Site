@@ -1,0 +1,27 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+body {
+  font-family: "Heebo";
+}
+
+.container {
+  padding: 0 60px;
+  max-width: 975px;
+  margin: 0 auto;
+}
+
+.container-x {
+  padding: 0 60px;
+  max-width: 1340px;
+  margin: 0 auto;
+}

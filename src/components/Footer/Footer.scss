@@ -1,0 +1,50 @@
+$icons-color: #FF6464;
+$text-color: #21243D;
+
+@mixin flexbox($flex, $jc, $ai, $gap, $fd) {
+  display: $flex;
+  justify-content: $jc;
+  align-items: $ai;
+  gap: $gap;
+  flex-direction: $fd;
+}
+
+.footer {
+  margin: {
+    top: 90px;
+  }
+  height: 182px;
+  width: 100%;
+  @include flexbox(flex, center, center, 35px, row);
+
+  &__icons {
+    @include flexbox(flex, center, center, 35px, row);
+    width: 100%;
+
+    i {
+      font-size: 35px;
+      cursor: pointer;
+      transition: all .2s linear;
+      -webkit-transition: all .2s linear;
+      -moz-transition: all .2s linear;
+      -ms-transition: all .2s linear;
+      -o-transition: all .2s linear;
+
+      &:hover {
+        color: $icons-color;
+      }
+    }
+  }
+
+  &-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: $text-color;
+    text-align: center;
+
+    margin: {
+      top: 25px;
+    }
+  }
+}
