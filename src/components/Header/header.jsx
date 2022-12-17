@@ -28,6 +28,7 @@ const header = () => {
                   Contact
                 </a>
               </li>
+              <i className="fa fa-bars"></i>
             </ul>
           </nav>
         </div>

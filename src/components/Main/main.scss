@@ -75,3 +75,56 @@ $btn-bg-color: #FF6464;
     }
   }
 }
+
+@media only screen and (max-width: 800px) {
+  .main{
+    &__container {
+      @include flexbox(flex, stretch, center, stretch, column-reverse);
+      text-align: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 555px){
+  .main {
+    margin: {
+      top: 100px;
+    }
+    &__container{
+      &_box{
+        &-title{
+          font-size: 35px;
+          line-height: 50px;
+        }
+        &-description{
+          margin: {
+            top: 10px;
+            bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 470px){
+  .main {
+    margin: {
+      top: 100px;
+    }
+    &__container{
+      &_box{
+        &-title{
+          font-size: 30px;
+          line-height: 45px;
+        }
+        &-description{
+          margin: {
+            top: 10px;
+            bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+}

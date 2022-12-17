@@ -88,3 +88,39 @@ $box-bg-color: #FFFFFF;
     }
   }
 }
+
+@media only screen and (max-width: 850px) {
+  .section {
+    &__post{
+      &_container{
+        @include flexbox(flex, center, flex-start, 20px, row);
+        flex-wrap: wrap;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .section {
+    &__post{
+      &_titles{
+        &-text{
+          font-size: 18px;
+        }
+      }
+      &_container{
+        &_box{
+          &-title{
+            font-size: 22px;
+            line-height: 34px;
+          }
+          &_dates{
+            &-text{
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

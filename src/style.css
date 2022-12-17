@@ -25,3 +25,19 @@ body {
   max-width: 1340px;
   margin: 0 auto;
 }
+
+@media only screen and (max-width: 500px) {
+  .container-x {
+    padding: 0 25px;
+    max-width: 1340px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .container {
+    padding: 0 30px;
+    max-width: 975px;
+    margin: 0 auto;
+  }
+}

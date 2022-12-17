@@ -93,3 +93,35 @@ $date-text-color: #8695A4;
     }
   }
 }
+
+
+@media only screen and (max-width: 790px){
+  .section {
+    &__featured{
+      &-text{
+        text-align: center;
+      }
+      &_container{
+        &_box{
+          @include flexbox(flex, flex-start,center, 18px, column);
+          &_content{
+            &-title {
+              font-size: 22px;
+              max-width: 250px;
+              line-height: 30px;
+            }
+            &_dates{
+              margin: {
+                top: 10px;
+                bottom: 10px;
+              }
+            }
+            &-description{
+              max-width: 240px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
