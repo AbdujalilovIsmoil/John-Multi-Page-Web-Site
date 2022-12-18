@@ -1,26 +1,15 @@
-import React, { useRef } from "react";
+import React from "react";
 import "./Navbar.scss";
 import { NavLink } from "react-router-dom";
 
 const Navbar = (props) => {
-  const { local } = props;
-  const barsRef = useRef();
-  const Clicked = () => {
-    barsRef.current.classList.add("actives");
-  };
-
-  const LinkClicked = (e) => {
-    if (e.target.classList.contains("Navbar__list_item-link")) {
-      barsRef.current.classList.add("actives");
-    }
-  };
+  const { total } = props;
 
   return (
     <>
-      <div ref={barsRef} className={local ? "Navbar active" : "Navbar"}>
-        <i onClick={() => Clicked()} className="fa fa-times"></i>
+      <div className={total ? "Navbar active" : "Navbar"}>
         <div className="container">
-          <ul onClick={(e) => LinkClicked(e)} className="Navbar__list">
+          <ul className="Navbar__list">
             <li className="Navbar__list_item">
               <NavLink
                 to="/"

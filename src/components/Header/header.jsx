@@ -9,12 +9,17 @@ const header = () => {
   const navRef = useRef();
   const Clicked = () => {
     setNav(nav => !nav);
-    navRef.current.classList.toggle("active");
+
+    if (nav == false) {
+      navRef.current.parentElement.parentElement.parentElement.parentElement.classList.add("active");
+    } else {
+      navRef.current.parentElement.parentElement.parentElement.parentElement.classList.remove("active");
+    }
   }
 
   return (
     <>
-      <Navbar local={nav} />
+      <Navbar total={nav} />
       <header className="header">
         <div className="container-x">
           <nav ref={navRef} className="nav">
@@ -67,7 +72,7 @@ const header = () => {
                   Contact
                 </NavLink>
               </li>
-              <i onClick={() => Clicked()} className="fa fa-bars"></i>
+              <i onClick={() => Clicked()} className={nav ? "fa fa-times" : "fa fa-bars"}></i>
             </ul>
           </nav>
         </div>

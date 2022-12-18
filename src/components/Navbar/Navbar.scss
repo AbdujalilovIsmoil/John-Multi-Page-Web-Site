@@ -10,14 +10,15 @@ $link-dark: #000000;
 }
 
 .Navbar {
-
-  .fa-times {
-    font-size: 25px;
-    position: absolute;
-    right: 25px;
-    top: 25px;
-    cursor: pointer;
+  &.active {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
   }
+
+  z-index: 1;
 
   position: fixed;
   top: 0;
@@ -46,20 +47,8 @@ $link-dark: #000000;
   -ms-transition: all .3s linear;
   -o-transition: all .3s linear;
   transform: translateX(-100%);
-
-  &.active {
-    transform: translateX(0);
-    -webkit-transform: translateX(0);
-    -moz-transform: translateX(0);
-    -ms-transform: translateX(0);
-    -o-transform: translateX(0);
-  }
-
-  &.actives {
-    transform: translateX(-100%);
-    -webkit-transform: translateX(-100%);
-    -moz-transform: translateX(-100%);
-    -ms-transform: translateX(-100%);
-    -o-transform: translateX(-100%);
-  }
+  -webkit-transform: translateX(-100);
+  -moz-transform: translateX(-100);
+  -ms-transform: translateX(-100);
+  -o-transform: translateX(-100);
 }

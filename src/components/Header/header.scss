@@ -43,11 +43,12 @@ $active-color: #FF6464;
 
       }
 
-      .fa-bars {
+      i {
         color: $link-color;
         font-size: 25px;
         cursor: pointer;
         display: none;
+        z-index: 4;
       }
     }
   }
@@ -63,7 +64,7 @@ $active-color: #FF6464;
           }
         }
 
-        .fa-bars {
+        i{
           display: block;
         }
       }

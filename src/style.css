@@ -13,6 +13,10 @@ body {
   font-family: "Heebo";
 }
 
+body.active {
+  overflow: hidden;
+}
+
 .container {
   padding: 0 60px;
   max-width: 975px;
