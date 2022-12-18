@@ -34,9 +34,9 @@ body {
   }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 500px) {
   .container {
-    padding: 0 30px;
+    padding: 0 20px;
     max-width: 975px;
     margin: 0 auto;
   }

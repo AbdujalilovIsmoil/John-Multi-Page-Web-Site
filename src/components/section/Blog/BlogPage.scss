@@ -1,0 +1,88 @@
+$title-color: #21243D;
+$dates-text-color: #8695A4;
+
+@mixin flexbox($flex, $jc, $ai, $gap, $fd) {
+  display: $flex;
+  justify-content: $jc;
+  align-items: $ai;
+  gap: $gap;
+  flex-direction: $fd;
+}
+
+.BlogPage {
+  &-title {
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 60px;
+    color: $title-color;
+
+    margin: {
+      top: 105px;
+    }
+  }
+
+  &_container {
+    &_box {
+      &-title {
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 44px;
+        color: $title-color;
+        margin: {
+          top: 45px;
+        }
+      }
+
+      &_dates {
+        @include flexbox(flex, flex-start, center, 20px, row);
+        margin: {
+          top: 15px;
+          bottom: 15px;
+        }
+        &-date {
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 29px;
+          color: $title-color;
+        }
+
+        &-text {
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 29px;
+          color: $dates-text-color;
+        }
+      }
+      &-description {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: $title-color;
+        max-width: 682px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 405px) {
+  .BlogPage{
+    &_container{
+      &_box{
+        &-title{
+          font-size: 25px;
+          margin: {
+            top: 35px;
+          }
+        }
+        &_dates{
+          &-date{
+            font-size: 18px;
+          }
+          &-text{
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}
