@@ -22,12 +22,14 @@ body.active {
   padding: 0 60px;
   max-width: 975px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .container-x {
   padding: 0 60px;
   max-width: 1340px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .header.active{
