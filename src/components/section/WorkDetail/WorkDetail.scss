@@ -1,0 +1,132 @@
+$title-color: #21243D;
+$date-color: #FFFFFF;
+$date-bg-color: #FF7C7C;
+$description-color: #000000;
+
+@mixin flexbox($flex, $jc, $ai, $gap, $fd) {
+  display: $flex;
+  justify-content: $jc;
+  align-items: $ai;
+  gap: $gap;
+  flex-direction: $fd;
+}
+
+.WorkDetail {
+  &__container {
+    &_box {
+      &-title {
+        font-weight: 700;
+        font-size: 34px;
+        line-height: 50px;
+        color: $title-color;
+        max-width: 500px;
+
+        margin: {
+          top: 100px;
+        }
+      }
+
+      &_content {
+        margin: {
+          top: 30px;
+          bottom: 25px;
+        }
+
+        @include flexbox(flex, flex-start, center, 17px, row);
+
+        &-date {
+          font-weight: 900;
+          font-size: 18px;
+          background-color: $date-bg-color;
+          border-radius: 16px;
+          display: inline-block;
+          color: $date-color;
+
+          padding: {
+            right: 10px;
+            left: 10px;
+            top: 1.5px;
+            bottom: 1.5px;
+          }
+
+        }
+
+        &-text {
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 29px;
+          color: $title-color;
+        }
+      }
+
+      &-description {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: $description-color;
+        max-width: 680px;
+
+        margin: {
+          bottom: 45px;
+        }
+      }
+
+      &-firstTitle {
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 60px;
+        color: $title-color;
+      }
+
+      &-secondTitle {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 60px;
+        color: $title-color;
+      }
+
+      &-description {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: $description-color;
+      }
+
+      &-img {
+        height: 100%;
+        width: 100%;
+
+        &.second {
+          margin: {
+            bottom: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .WorkDetail {
+    &__container {
+      &_box {
+        &-title {
+          font-size: 30px;
+          line-height: 45px;
+        }
+
+        &_content {
+          @include flexbox(flex, flex-start, center, 5px, row);
+
+          &-date {
+            font-size: 16px;
+          }
+
+          &-text {
+            font-size: 17px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,9 +1,10 @@
 import React from 'react';
+import Works from '../../components/section/Work/Work';
 
 const Work = () => {
   return (
     <div>
-      <h1>Work</h1>
+      <Works />
     </div>
   );
 };

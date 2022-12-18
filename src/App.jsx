@@ -6,6 +6,8 @@ import ErrorFound from "./UI/404/ErrorFound";
 import "./style.css";
 import Homes from "./pages/Home/Homes";
 import Blog from "./pages/Blog/Blog";
+import Work from "./pages/Work/Work";
+import WorkDetail from "./pages/WorkDetail/WorkDetail";
 
 const App = () => {
   return (
@@ -17,6 +19,8 @@ const App = () => {
             <Route path="/" element={<Homes />}/>
             <Route path="*" element={<ErrorFound />} />
             <Route path="/blog" element={<Blog />}/>
+            <Route path="/work" element={<Work />}/>
+            <Route path="/contact" element={<WorkDetail />}/>
           </Routes>
         </main>
         <Footer />

@@ -10,24 +10,52 @@ const header = () => {
           <nav className="nav">
             <ul className="nav__list">
               <li className="nav__list_item">
-                <NavLink to="/" className="nav__list_item-link active">
+                <NavLink
+                  to="/"
+                  className={({ isActive }) =>
+                    isActive
+                      ? "nav__list_item-link active"
+                      : "nav__list_item-link"
+                  }
+                >
                   Home
                 </NavLink>
               </li>
               <li className="nav__list_item">
-                <NavLink to="/blog" className="nav__list_item-link">
+                <NavLink
+                  to="/blog"
+                  className={({ isActive }) =>
+                    isActive
+                      ? "nav__list_item-link active"
+                      : "nav__list_item-link"
+                  }
+                >
                   Blog
                 </NavLink>
               </li>
               <li className="nav__list_item">
-                <a href="#" className="nav__list_item-link">
+                <NavLink
+                  to="/work"
+                  className={({ isActive }) =>
+                    isActive
+                      ? "nav__list_item-link active"
+                      : "nav__list_item-link"
+                  }
+                >
                   Works
-                </a>
+                </NavLink>
               </li>
               <li className="nav__list_item">
-                <a href="#" className="nav__list_item-link">
-                  Contact
-                </a>
+                <NavLink
+                  to="/contact"
+                  className={({ isActive }) =>
+                    isActive
+                      ? "nav__list_item-link active"
+                      : "nav__list_item-link"
+                  }
+                >
+                  Works
+                </NavLink>
               </li>
               <i className="fa fa-bars"></i>
             </ul>

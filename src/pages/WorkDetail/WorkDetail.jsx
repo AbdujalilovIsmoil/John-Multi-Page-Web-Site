@@ -1,9 +1,10 @@
 import React from 'react';
+import WorkDetails from "../../components/section/WorkDetail/WorkDetail";
 
 const WorkDetail = () => {
   return (
     <div>
-      <h1>WorkDetail</h1>
+      <WorkDetails />
     </div>
   );
 };
