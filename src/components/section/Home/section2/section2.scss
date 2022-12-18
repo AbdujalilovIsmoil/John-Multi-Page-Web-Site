@@ -10,6 +10,20 @@ $date-text-color: #8695A4;
   flex-direction: $fd;
 }
 
+.WorkPage {
+  &-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    color: $text-color;
+
+    margin: {
+      top: 90px;
+      bottom: 25px;
+    }
+  }
+}
+
 .section {
   &__featured {
     &-text {
@@ -27,15 +41,21 @@ $date-text-color: #8695A4;
     &_container {
       &_box {
         @include flexbox(flex, flex-start, flex-start, 18px, row);
-        &:nth-child(2){
+        &:nth-child(1) {
+          margin: {
+            bottom: 46px;
+          }
+        }
+        &:nth-child(3) {
           margin: {
             top: 46px;
             bottom: 66px;
           }
         }
+
         &-img {
-          height: 180px;
-          width: 245px;
+          height: 100%;
+          width: 100%;
         }
 
         &_content {
@@ -94,30 +114,281 @@ $date-text-color: #8695A4;
   }
 }
 
+@media only screen and (max-width: 790px) {
+  .WorkPage {
+    &-title {
+      font-size: 40px;
+    }
+  }
 
-@media only screen and (max-width: 790px){
   .section {
-    &__featured{
-      &-text{
+    &__featured {
+      &-text {
         text-align: center;
       }
-      &_container{
-        &_box{
-          @include flexbox(flex, flex-start,center, 18px, column);
-          &_content{
+
+      &_container {
+        &_box {
+          &-img {
+            width: 600px;
+          }
+
+          @include flexbox(flex, flex-start, flex-start, 0, column);
+
+          &_content {
             &-title {
-              font-size: 22px;
-              max-width: 250px;
+              font-size: 50px;
+              max-width: 100%;
               line-height: 30px;
+
+              margin: {
+                top: 35px;
+                bottom: 35px;
+              }
             }
-            &_dates{
+
+            &_dates {
               margin: {
                 top: 10px;
                 bottom: 10px;
               }
             }
-            &-description{
-              max-width: 240px;
+
+            &-description {
+              max-width: 600px;
+              font-size: 22px;
+              line-height: 30px;
+
+              margin: {
+                top: 30px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .section {
+    &__featured {
+      &_container {
+        &_box {
+          &-img {
+            width: 575px;
+          }
+
+          &_content {
+            &-title {
+              font-size: 35px;
+
+              margin: {
+                top: 25px;
+                bottom: 25px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 590px) {
+  .section {
+    &__featured {
+      &_container {
+        &_box {
+          &-img {
+            width: 500px;
+          }
+
+          &_content {
+            &-title {
+              font-size: 30px;
+
+              margin: {
+                top: 25px;
+                bottom: 25px;
+              }
+            }
+
+            &-description {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .WorkPage {
+    &-title {
+      font-size: 30px;
+
+      margin: {
+        bottom: 10px;
+      }
+    }
+  }
+
+  .section {
+    &__featured {
+      &_container {
+        &_box {
+          &-img {
+            width: 450px;
+          }
+
+          &_content {
+            &-title {
+              font-size: 30px;
+
+              margin: {
+                top: 25px;
+                bottom: 25px;
+              }
+            }
+
+            &-description {
+              font-size: 17px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .section {
+    &__featured {
+      &_container {
+
+        &_box {
+          &-img {
+            width: 425px;
+          }
+
+          &_content {
+            &-title {
+              font-size: 30px;
+
+              margin: {
+                top: 25px;
+                bottom: 25px;
+              }
+            }
+
+            &-description {
+              font-size: 17px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .WorkPage{
+    &-title {
+      margin: {
+        top: 25px;
+      }
+    }
+  }
+  .section {
+    &__featured {
+      &_container {
+
+        &_box {
+          &-img {
+            width: 400px;
+          }
+
+          &_content {
+            &-title {
+              font-size: 30px;
+
+              margin: {
+                top: 25px;
+                bottom: 25px;
+              }
+            }
+
+            &-description {
+              font-size: 17px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .WorkPage{
+    &-title {
+      margin: {
+        top: 25px;
+      }
+    }
+  }
+  .section {
+    &__featured {
+      &_container {
+
+        &_box {
+          &-img {
+            width: 375px;
+          }
+
+          &_content {
+            &-title {
+              font-size: 30px;
+
+              margin: {
+                top: 25px;
+                bottom: 25px;
+              }
+            }
+
+            &-description {
+              font-size: 17px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .section {
+    &__featured {
+      &_container {
+
+        &_box {
+          &-img {
+            width: 340px;
+          }
+
+          &_content {
+            &-title {
+              font-size: 30px;
+
+              margin: {
+                top: 25px;
+                bottom: 25px;
+              }
+            }
+
+            &-description {
+              font-size: 17px;
             }
           }
         }
