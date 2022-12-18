@@ -1,7 +1,7 @@
-$text-color: #21243D;
-$link-color: #00A8CC;
-$section-bg-color: #EDF7FA;
-$box-bg-color: #FFFFFF;
+$text-color: #21243d;
+$link-color: #00a8cc;
+$section-bg-color: #edf7fa;
+$box-bg-color: #ffffff;
 
 @mixin flexbox($flex, $jc, $ai, $gap, $fd) {
   display: $flex;
@@ -74,7 +74,6 @@ $box-bg-color: #FFFFFF;
             line-height: 26px;
             color: $text-color;
           }
-
         }
 
         &-description {
@@ -91,8 +90,8 @@ $box-bg-color: #FFFFFF;
 
 @media only screen and (max-width: 850px) {
   .section {
-    &__post{
-      &_container{
+    &__post {
+      &_container {
         @include flexbox(flex, center, flex-start, 20px, row);
         flex-wrap: wrap;
       }
@@ -102,20 +101,20 @@ $box-bg-color: #FFFFFF;
 
 @media only screen and (max-width: 400px) {
   .section {
-    &__post{
-      &_titles{
-        &-text{
+    &__post {
+      &_titles {
+        &-text {
           font-size: 18px;
         }
       }
-      &_container{
-        &_box{
-          &-title{
+      &_container {
+        &_box {
+          &-title {
             font-size: 22px;
             line-height: 34px;
           }
-          &_dates{
-            &-text{
+          &_dates {
+            &-text {
               font-size: 15px;
             }
           }

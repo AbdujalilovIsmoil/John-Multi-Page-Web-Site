@@ -1,6 +1,6 @@
-$title-color: #21243D;
-$date-color: #FFFFFF;
-$date-bg-color: #FF7C7C;
+$title-color: #21243d;
+$date-color: #ffffff;
+$date-bg-color: #ff7c7c;
 $description-color: #000000;
 
 @mixin flexbox($flex, $jc, $ai, $gap, $fd) {
@@ -48,7 +48,6 @@ $description-color: #000000;
             top: 1.5px;
             bottom: 1.5px;
           }
-
         }
 
         &-text {

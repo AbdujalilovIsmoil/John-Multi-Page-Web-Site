@@ -1,0 +1,65 @@
+$bg-light: #ffffff;
+$link-dark: #000000;
+
+@mixin flexbox($flex, $jc, $ai, $gap, $fd) {
+  display: $flex;
+  justify-content: $jc;
+  align-items: $ai;
+  gap: $gap;
+  flex-direction: $fd;
+}
+
+.Navbar {
+
+  .fa-times {
+    font-size: 25px;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    cursor: pointer;
+  }
+
+  position: fixed;
+  top: 0;
+  background-color: $bg-light;
+  width: 100%;
+  min-height: 100vh;
+  @include flexbox(flex, center, center, stretch, row);
+  z-index: 1;
+
+  &__list {
+    text-align: center;
+
+    &_item {
+      &-link {
+        color: $link-dark;
+        font-size: 25px;
+        font-weight: 600;
+        line-height: 45px;
+      }
+    }
+  }
+
+  transition: all .3s linear;
+  -webkit-transition: all .3s linear;
+  -moz-transition: all .3s linear;
+  -ms-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  transform: translateX(-100%);
+
+  &.active {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+
+  &.actives {
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+  }
+}

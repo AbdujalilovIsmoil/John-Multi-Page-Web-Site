@@ -41,11 +41,13 @@ $date-text-color: #8695A4;
     &_container {
       &_box {
         @include flexbox(flex, flex-start, flex-start, 18px, row);
+
         &:nth-child(1) {
           margin: {
             bottom: 46px;
           }
         }
+
         &:nth-child(3) {
           margin: {
             top: 46px;
@@ -294,13 +296,14 @@ $date-text-color: #8695A4;
 }
 
 @media only screen and (max-width: 450px) {
-  .WorkPage{
+  .WorkPage {
     &-title {
       margin: {
         top: 25px;
       }
     }
   }
+
   .section {
     &__featured {
       &_container {
@@ -331,13 +334,14 @@ $date-text-color: #8695A4;
 }
 
 @media only screen and (max-width: 420px) {
-  .WorkPage{
+  .WorkPage {
     &-title {
       margin: {
         top: 25px;
       }
     }
   }
+
   .section {
     &__featured {
       &_container {

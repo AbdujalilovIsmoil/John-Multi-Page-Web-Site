@@ -13,6 +13,7 @@ $text-color: #21243D;
   margin: {
     top: 90px;
   }
+
   height: 182px;
   width: 100%;
   @include flexbox(flex, center, center, 35px, row);

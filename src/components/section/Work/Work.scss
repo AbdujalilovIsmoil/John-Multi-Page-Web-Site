@@ -45,7 +45,13 @@ $date-text-color: #8695A4;
         &:nth-child(3) {
           margin: {
             top: 46px;
-            bottom: 66px;
+            bottom: 46px;
+          }
+        }
+
+        &.four {
+          margin: {
+            top: 46px;
           }
         }
 
@@ -290,13 +296,14 @@ $date-text-color: #8695A4;
 }
 
 @media only screen and (max-width: 450px) {
-  .WorkPage{
+  .WorkPage {
     &-title {
       margin: {
         top: 25px;
       }
     }
   }
+
   .section {
     &__featured {
       &_container {
@@ -327,13 +334,14 @@ $date-text-color: #8695A4;
 }
 
 @media only screen and (max-width: 420px) {
-  .WorkPage{
+  .WorkPage {
     &-title {
       margin: {
         top: 25px;
       }
     }
   }
+
   .section {
     &__featured {
       &_container {

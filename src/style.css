@@ -9,7 +9,6 @@
   -webkit-tap-highlight-color: transparent;
 }
 
-
 body {
   font-family: "Heebo";
 }
@@ -26,6 +25,10 @@ body {
   margin: 0 auto;
 }
 
+.header.active{
+  position: fixed;
+}
+
 @media only screen and (max-width: 500px) {
   .container-x {
     padding: 0 25px;
@@ -40,7 +43,7 @@ body {
     max-width: 975px;
     margin: 0 auto;
   }
-} 
+}
 
 @media only screen and (max-width: 500px) {
   .container {

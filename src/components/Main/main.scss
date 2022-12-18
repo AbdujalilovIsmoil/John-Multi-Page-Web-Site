@@ -14,6 +14,7 @@ $btn-bg-color: #FF6464;
   margin: {
     top: 160px;
   }
+
   &__container {
     @include flexbox(flex, space-between, flex-start, stretch, row);
 
@@ -68,7 +69,8 @@ $btn-bg-color: #FF6464;
           color: $btn-bg-color;
         }
       }
-      &-img{
+
+      &-img {
         height: 245px;
         width: 245px;
       }
@@ -77,7 +79,7 @@ $btn-bg-color: #FF6464;
 }
 
 @media only screen and (max-width: 800px) {
-  .main{
+  .main {
     &__container {
       @include flexbox(flex, stretch, center, stretch, column-reverse);
       text-align: center;
@@ -85,18 +87,20 @@ $btn-bg-color: #FF6464;
   }
 }
 
-@media only screen and (max-width: 555px){
+@media only screen and (max-width: 555px) {
   .main {
     margin: {
       top: 100px;
     }
-    &__container{
-      &_box{
-        &-title{
+
+    &__container {
+      &_box {
+        &-title {
           font-size: 35px;
           line-height: 50px;
         }
-        &-description{
+
+        &-description {
           margin: {
             top: 10px;
             bottom: 20px;
@@ -107,18 +111,20 @@ $btn-bg-color: #FF6464;
   }
 }
 
-@media only screen and (max-width: 470px){
+@media only screen and (max-width: 470px) {
   .main {
     margin: {
       top: 100px;
     }
-    &__container{
-      &_box{
-        &-title{
+
+    &__container {
+      &_box {
+        &-title {
           font-size: 30px;
           line-height: 45px;
         }
-        &-description{
+
+        &-description {
           margin: {
             top: 10px;
             bottom: 20px;

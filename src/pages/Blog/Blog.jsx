@@ -43,7 +43,7 @@ const Blog = () => {
 
   return (
     <div>
-      <BlogPage api={BlogPageApi}/>
+      <BlogPage api={BlogPageApi} />
     </div>
   );
 };

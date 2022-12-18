@@ -1,13 +1,23 @@
-import React from "react";
+import React, { useState, useRef } from "react";
 import "./header.scss";
 import { NavLink } from "react-router-dom";
+import Navbar from "../../components/Navbar/Navbar";
 
 const header = () => {
+
+  const [nav, setNav] = useState(false);
+  const navRef = useRef();
+  const Clicked = () => {
+    setNav(nav => !nav);
+    navRef.current.classList.toggle("active");
+  }
+
   return (
     <>
+      <Navbar local={nav} />
       <header className="header">
         <div className="container-x">
-          <nav className="nav">
+          <nav ref={navRef} className="nav">
             <ul className="nav__list">
               <li className="nav__list_item">
                 <NavLink
@@ -54,10 +64,10 @@ const header = () => {
                       : "nav__list_item-link"
                   }
                 >
-                  Works
+                  Contact
                 </NavLink>
               </li>
-              <i className="fa fa-bars"></i>
+              <i onClick={() => Clicked()} className="fa fa-bars"></i>
             </ul>
           </nav>
         </div>

@@ -28,6 +28,7 @@ $dates-text-color: #8695A4;
         font-size: 30px;
         line-height: 44px;
         color: $title-color;
+
         margin: {
           top: 45px;
         }
@@ -35,10 +36,12 @@ $dates-text-color: #8695A4;
 
       &_dates {
         @include flexbox(flex, flex-start, center, 20px, row);
+
         margin: {
           top: 15px;
           bottom: 15px;
         }
+
         &-date {
           font-weight: 400;
           font-size: 20px;
@@ -53,6 +56,7 @@ $dates-text-color: #8695A4;
           color: $dates-text-color;
         }
       }
+
       &-description {
         font-weight: 400;
         font-size: 16px;
@@ -65,20 +69,23 @@ $dates-text-color: #8695A4;
 }
 
 @media only screen and (max-width: 405px) {
-  .BlogPage{
-    &_container{
-      &_box{
-        &-title{
+  .BlogPage {
+    &_container {
+      &_box {
+        &-title {
           font-size: 25px;
+
           margin: {
             top: 35px;
           }
         }
-        &_dates{
-          &-date{
+
+        &_dates {
+          &-date {
             font-size: 18px;
           }
-          &-text{
+
+          &-text {
             font-size: 18px;
           }
         }

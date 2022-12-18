@@ -40,8 +40,9 @@ $active-color: #FF6464;
             color: $active-color;
           }
         }
-        
+
       }
+
       .fa-bars {
         color: $link-color;
         font-size: 25px;
@@ -61,6 +62,7 @@ $active-color: #FF6464;
             display: none;
           }
         }
+
         .fa-bars {
           display: block;
         }
